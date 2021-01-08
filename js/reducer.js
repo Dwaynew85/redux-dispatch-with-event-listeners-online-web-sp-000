@@ -19,6 +19,8 @@ function render() {
   container.textContent = state.count;
 }
 
+dispatch({type: '@@INIT'})
+
 let buton = document.getElementById('button');
 
 button.addEventListener('click', () => {
